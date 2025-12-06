@@ -1,6 +1,6 @@
 # Hand Proximity Alert System
 
-A simple OpenCV-based application that detects a hand and alerts when it approaches a virtual boundary on the right side of the frame.
+A simple OpenCV-based application that detects a hand and alerts when it approaches a virtual boundary on the right side of the frame. No external libraries are used.
 
 ## Features
 - Real-time hand detection using HSV skin segmentation + background subtraction
@@ -58,9 +58,4 @@ python main.py
 - Adjust thresholds: Edit `self.warning_threshold` and `self.danger_threshold`.
 - Tune skin ranges: Modify `self.lower_skin`/`self.upper_skin` and use calibration (`c`).
 
-## Notes
-- This app does not record or save video; it only processes frames in memory.
-- Skin detection can vary across lighting and skin tones; calibration helps.
 
-## License
-Provided as-is for educational and personal use.
